@@ -6,7 +6,7 @@ Allow your web component to provide its own default light children.
 
 [Slots](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_templates_and_slots#Adding_flexibility_with_slots) support a concept of default slot content.  But it doesn't behave at all like I would expect it to behave.  Unlike light children slot content, no slotchange event is fired, and outside styling can't reach this content.  For all intents and purposes, it feels like shadow DOM, rather than default light children. 
 
-slot-kin is designed to behave like I would have wanted the default slot contain to behave.
+slot-kin is designed to behave like I would have wanted the default slot content to behave.
 
 ## Syntax
 
