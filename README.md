@@ -15,7 +15,7 @@ slot-kin is designed to behave like I would have wanted the default slot contain
     #ShadowDom
         <slot-kin name="mySlot">
             <template>
-                <div>My Default Slot Content</div>
+                <div slot="mySlot">My Default Slot Content</div>
             </template>
         </slot-kin>
 </my-web-component>
