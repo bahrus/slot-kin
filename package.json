@@ -1,6 +1,6 @@
 {
   "name": "slot-kin",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Allow your web component to provide its own default light children.",
   "main": "slot-kin.js",
   "module": "slot-kin.js",
