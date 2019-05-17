@@ -44,6 +44,10 @@ If no such slot is found, it creates one:
 </my-web-component>
 ```
 
+**NB I** Knowing when to check whether user-provided slots are provided is a bit dicey currently.
+
+**NB II**  Dynamically adding DOM light children to itself could get washed away if using an overly-controllingframework.
+
 
 
 
