@@ -32,7 +32,7 @@ If no such slot is found, it creates one:
     #ShadowDom
         <slot-kin name="mySlot">
             <template>
-                <div>My Default Slot Content</div>
+                <div slot="mySlot">My Default Slot Content</div>
             </template>
         </slot-kin>
 </my-web-component>
