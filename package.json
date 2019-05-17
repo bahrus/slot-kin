@@ -1,8 +1,9 @@
 {
   "name": "slot-kin",
   "version": "0.0.0",
-  "description": "TBD",
+  "description": "Allow your web component to provide its own default light children.",
   "main": "slot-kin.js",
+  "module": "slot-kin.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
