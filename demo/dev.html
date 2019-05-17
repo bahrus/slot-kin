@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script type="module" src="../slot-kin.js"></script>
+
+    <script type="module">
+        class MyTest extends HTMLElement{
+            constructor(){
+                super();
+                this.attachShadow({ mode: 'open' });
+                const templ = document.createElement('template');
+                templ.innerHTML = `
+                    <slot name="test-slot">
+                    </slot>
+                    <slot-kin name="test-slot">
+                        <template>
+                            <div slot="test-slot">I am here</div>
+                        </template>
+                    </slot-kin>
+                `;
+                this.shadowRoot.appendChild(templ.content.cloneNode(true));
+            }
+        }
+        customElements.define('my-test', MyTest);
+
+    </script>
+
+    <my-test></my-test>
+</body>
+</html>

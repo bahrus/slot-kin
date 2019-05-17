@@ -6,7 +6,7 @@ export class SlotKin extends HTMLElement{
     static get is(){return 'slot-kin';}
 
     connectedCallback(){
-
+        this.getTemplate();
     }
 
     getTemplate(){
@@ -23,10 +23,14 @@ export class SlotKin extends HTMLElement{
         let target = host
         if(slotName !== null){
             setTimeout(() =>{
-                const existingSlot = host.querySelector(`slot=[${slotName}]`);
-                if(existingSlot === null){
-                    const clonedNode = templ.content.cloneNode(true);
-                }
+                customElements.whenDefined(host.localName).then(() =>{
+                    const existingSlot = host.querySelector(`[slot="${slotName}"]`);
+                    if(existingSlot === null){
+                        const clonedNode = templ.content.cloneNode(true);
+                        host.appendChild(clonedNode);
+                    }
+                })
+
             }, 50);
             
         }
