@@ -1,3 +1,9 @@
+[![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/slot-kin)
+
+<a href="https://nodei.co/npm/slot-kin/"><img src="https://nodei.co/npm/slot-kin.png"></a>
+
+<img src="https://badgen.net/bundlephobia/minzip/slot-kin">
+
 # slot-kin
 
 Allow your web component to provide its own default light children.
