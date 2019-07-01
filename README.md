@@ -46,7 +46,9 @@ If no such slot is found, it creates one:
 
 **NB I** Knowing when to check whether user-provided slots are provided is a bit dicey currently.
 
-**NB II**  Dynamically adding DOM light children to itself could get washed away if using an overly-controllingframework.
+**NB II**  Dynamically adding DOM light children to itself could get washed away if using an overly-controlling framework.
+
+**NB III**  Just in case anyone actually read the previous sentence and made a connection I didn't intend:  The previous sentence was typed as a kind of afterthought.  I was really focused at the time on a parallel issue of how to handle passing the same children downward through multiple slot elements without deleting / adding (still not sure what the proper way to do that is), which seems not good for performance reasons.  I had no intention of bringing up any other disturbing connotations, and it isn't at all fair to lay that on anyone.  Apologies.
 
 
 
