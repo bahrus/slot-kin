@@ -76,7 +76,7 @@ I had no conscious intention of bringing up any other disturbing connotations, a
 
 I think it is quite natural, after working with the DOM for a number of years, to think of those elements as concious beings, as it makes reasoning about them quite a bit easier, at least for me.  I find it a nice way to add a little humor to the situation, too, when appropriate.  The fact that there are "parents" and "children" and "siblings" makes the comparison almost unavoidable, I would think.
 
-I realize now that when you combine all these things together, all sorts of unfair comparisons can be made, like "hiding children in the shadows from a big bad framework".  Who knows if that's a factor in why I never developed a fondness for a popular framework of the day, perhaps irrationally so?
+I realize now that when you combine all these things together, all sorts of unfair comparisons can be made, like "hiding children in the shadows from a big bad framework", or comparisons to the frightning phrase "we will replace you".  Who knows if that's a factor in why I never developed a fondness for a popular framework of the day, perhaps irrationally so?
 
 Perhaps it has caused me to become overly biased in favor of hiding (via display:none) rather than deleting children when no longer needed, in order to hold on to their "memories".  This might not always be the right choice, especially on a low-memory device.
 
