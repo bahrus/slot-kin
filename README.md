@@ -76,9 +76,11 @@ I had no conscious intention of bringing up any other disturbing connotations, a
 
 I think it is quite natural, after working with the DOM for a number of years, to think of those elements as concious beings, as it makes reasoning about them quite a bit easier, at least for me.  I find it a nice way to add a little humor to the situation, too, when appropriate.  The fact that there are "parents" and "children" and "siblings" makes the comparison almost unavoidable, I would think.
 
+This tendency only increases dramatically in our current situation, where names of custom elements need to be unique.  This kind of forces you to think long and hard about what the name should be, which is something any soon-to-be parent can relate to.  Perhaps this psychological attachment / malady will diminish as [Scoped Custom Element Registries](https://github.com/w3c/webcomponents/issues/716) allows you essentially only have to choose the [first and middle name of your baby](https://www.youtube.com/watch?v=QxbJJ995Vjo), closer to the situation with actual babies, more or less. 
+
 I realize now that when you combine all these things together, all sorts of unfair comparisons can be made, like "hiding children in the shadows from a big bad framework", or comparisons to the frightning phrase "we will replace you".  Who knows if that's a factor in why I never developed a fondness for a popular framework of the day, perhaps irrationally so?
 
-Perhaps it has caused me to become overly biased in favor of hiding (via display:none) rather than deleting children when no longer needed, in order to hold on to their "memories".  This might not always be the right choice, especially on a low-memory device.
+Perhaps it has caused me to become overly biased in favor of hiding (via display:none) rather than deleting children when no longer needed at least for the moment, in order to hold on to their "memories".  This might not always be the right choice, especially on a low-memory device.
 
 All this thinking brings me back to a personal story, and taking comfort in the observation that I'm probably not alone in this tendency of thinking  hyper-anthropomorphically, and that it isn't limited to DOM Elements.
 
