@@ -14,6 +14,11 @@ Allow your web component to provide its own default light children.
 
 slot-kin is designed to behave like I would have wanted the default slot content to behave.
 
+## The usefulness of default slot children
+
+There may be other uses, but the one that I find most interesting is that the ability to provide default slot children would provide a way of "self-documenting" the component, so users could inspect the element and see exactly what they need to do to create the output they need.
+
+
 ## Syntax
 
 ```html
@@ -46,9 +51,48 @@ If no such slot is found, it creates one:
 
 **NB I** Knowing when to check whether user-provided slots are provided is a bit dicey currently.
 
+I think [this proposal](https://github.com/w3c/webcomponents/issues/809) would go a long way to making this possible to do reliably.
+
 **NB II**  Dynamically adding DOM light children to itself could get washed away if using an overly-controlling framework.
 
-**NB III**  Just in case anyone actually read the previous sentence and made a connection I didn't intend:  The previous sentence was typed as a kind of afterthought.  I was really focused at the time on a parallel issue of how to handle passing the same children downward through multiple slot elements without deleting / adding (still not sure what the proper way to do that is), which seems not good for performance reasons.  I had no intention of bringing up any other disturbing connotations, and it isn't at all fair to lay that on anyone.  Apologies.
+## The benefits and pitfalls of viewing DOM Elements anthropomorphically 
+
+<details>
+  <summary>Warning:  TMI</summary>
+
+Just in case anyone actually read the previous sentence and made a connection I didn't intend:  The previous sentence was typed as a kind of afterthought.  
+
+I was really focused at the time on a parallel issue of how to handle passing the same children downward through multiple slot elements without deleting / adding (still not sure what the proper way to do that is), which seems not good for performance reasons.  
+
+I was going to give it the name "slot-nik", based on the Urban Dictionary definition:  
+
+>Someone whose fanatical devotion to or reverent need for the deliberation of minutia slows you down, especially in some kind of line.
+
+I decided against it, because it seemed it might have slightly negative overtones to a particular ethnic group.
+
+This made me think about the opposite direction, so I thought it would make sense to name this element slot-kin, which seemed more friendly in nature to the same ethnic group, and actually fit the description of what this element is trying to achieve quite nicely.
+
+I had no conscious intention of bringing up any other disturbing connotations, and it isn't at all fair to lay that on anyone.  I can't rule out the possibility that my subsconscious was playing tricks on me, so apologies.
+
+I think it is quite natural, after working with the DOM for a number of years, to think of those elements as concious beings, as it makes reasoning about them quite a bit easier, at least for me.  I find it a nice way to add a little humor to the situation, too, when appropriate.  The fact that there are "parents" and "children" and "siblings" makes the comparison almost unavoidable, I would think.
+
+I realize now that when you combine all these things together, all sorts of unfair comparisons can be made, like "hiding children in the shadows from a big bad framework".  Who knows if that's a factor in why I never developed a fondness for a popular framework of the day, perhaps irrationally so?
+
+Perhaps it has caused me to become overly biased in favor of hiding (via display:none) rather than deleting children when no longer needed, in order to hold on to their "memories".  This might not always be the right choice, especially on a low-memory device.
+
+All this thinking brings me back to a personal story, and taking comfort in the observation that I'm probably not alone in this tendency of thinking  hyper-anthropomorphically, and that it isn't limited to DOM Elements.
+
+When I was growing up, my fairly recently deceased mother used to recount a story where she had a pleasant dream where she was cutting me up into pieces, and wasn't worried about it at all, because she knew she would be able to put me back together again.  When she woke up, she (recursively) felt guilty about *not* feeling guilty about it.
+
+Then she realized she was projecting me onto her Fortran program she was improving at work.  There was no word for it at the time -- I guess she was "refactoring" her program, and me both, which is a good representation of how devoted she was to raising me right.
+
+So I guess this component, such as it is, is in loving memory to her.  
+
+</details>
+
+ 
+
+
 
 
 
