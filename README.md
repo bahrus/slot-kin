@@ -53,7 +53,7 @@ If no such slot is found, it creates one:
 
 I think [this proposal](https://github.com/w3c/webcomponents/issues/809) would go a long way to making this possible to do reliably.
 
-**NB II**  Dynamically adding DOM light children to itself might run into issues if hosted with a framework that uses VDOM implementation.
+**NB II**  Dynamically adding DOM light children to itself might run into issues if hosted within a framework that uses VDOM implementation.
 
 
 
