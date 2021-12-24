@@ -11,10 +11,7 @@
     "type": "git",
     "url": "git+https://github.com/bahrus/slot-kin.git"
   },
-  "dependencies": {
-    "xtal-element": "0.0.59",
-    "trans-render": "0.0.111"
-  },
+  "dependencies": {},
   "author": "anderson.bruce.b@gmail.com",
   "license": "MIT",
   "bugs": {

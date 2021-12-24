@@ -16,7 +16,8 @@ slot-kin is designed to behave like I would have wanted the default slot content
 
 ## The usefulness of default slot children
 
-There may be other uses, but the one that I find most interesting is that the ability to provide default slot children would provide a way of "self-documenting" the component, so users could inspect the element and see exactly what they need to do to create the output they need.
+1.  The ability to provide default slot children would provide a way of "self-documenting" the component, so users could inspect the element and see exactly what they need to do to create the output they need.
+2.  In some cases, a simple, native, default button can be used as part of the interface, but power users may want to specify specifically which button to use (for example which design library to use). 
 
 
 ## Syntax

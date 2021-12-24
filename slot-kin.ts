@@ -1,9 +1,6 @@
-import {define} from 'trans-render/define.js';
-import {getHost} from 'xtal-element/getHost.js';
 
-const name = 'name';
 export class SlotKin extends HTMLElement{
-    static get is(){return 'slot-kin';}
+    static is = 'slot-kin';
 
     connectedCallback(){
         this.getTemplate();
@@ -17,9 +14,9 @@ export class SlotKin extends HTMLElement{
             }, 50);
             return;
         }
-        const host = getHost(this);
+        const host = (<any>this.getRootNode()).host;
         if(host === null) return;
-        const slotName = this.getAttribute(name);
+        const slotName = this.getAttribute('name');
         let target = host
         if(slotName !== null){
             setTimeout(() =>{
@@ -36,4 +33,4 @@ export class SlotKin extends HTMLElement{
         }
     }
 }
-define(SlotKin);
+customElements.define('slot-kin', SlotKin);
